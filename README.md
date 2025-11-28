@@ -68,3 +68,16 @@ nextgen-multimodal-generative-vlm-evaluation-suite/
 ### 🔹 Why These Models?
 - **ViLT →** Efficient, lightweight transformer ideal for fact-based VQA  
 - **SmolVLM →** Produces rich, detailed multi-sentence explanations
+
+## 🚀 Usage Instructions
+- Run ViLT App
+```
+cd vilt_vqa
+python vilt_app.py
+```
+
+## Run SmolVLM App
+```
+cd smolvlm_vqa
+python smolvlm_app.py
+```
