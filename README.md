@@ -173,3 +173,16 @@ This project demonstrates:
 The benchmark results clearly show how **architectural choices impact real-world multimodal performance**.
 
 
+## 🔮 Future Improvements
+
+- Integrate automatic metrics (BLEU, ROUGE, CIDEr) for evaluating descriptions  
+- Explore quantization, ONNX Runtime, and CPU optimizations  
+- Add batch inference for large-scale benchmarking  
+- Build a Streamlit/web deployment for production usage  
+- Expand benchmark suite with more VLMs  
+
+## 🤝 Contributions
+
+Contributions are welcome!  
+If you want to improve the implementation, benchmarking, or add new VLMs, feel free to open an issue or submit a PR.  
+This project aims to stay clean, accessible, and community-friendly.  
