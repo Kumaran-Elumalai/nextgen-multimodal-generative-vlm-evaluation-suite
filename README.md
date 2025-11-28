@@ -154,6 +154,7 @@ ViLT = concise factual responses.
 - Clear trade-off:  
   **classification-based models = speed**  
   **decoder-based models = generative quality**  
+  
 
 
 
