@@ -40,4 +40,13 @@ nextgen-multimodal-generative-vlm-evaluation-suite/
 │── README.md
 │── requirements.txt
 ```
+## 🧠 Features
 
+- **Two Multimodal Pipelines:**  
+  ViLT (classification-style VQA) and SmolVLM (generative, descriptive answers)
+
+- **Interactive Gradio Interfaces:**  
+  Upload an image and get a professional, descriptive answer
+
+- **CPU-Friendly Implementation:**  
+  Optimized for environments without GPU
