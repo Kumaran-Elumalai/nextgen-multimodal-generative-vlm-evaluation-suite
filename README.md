@@ -83,20 +83,3 @@ python smolvlm_app.py
 ```
 #### A Gradio interface will open in your browser automatically.
 
-## 🔧 Technical Highlights
-
-### 🔹 Vision–Language Processing
-- **ViLT:** Uses attention-based fusion between image patches and text tokens  
-- **SmolVLM:** Combines a Vision Transformer encoder with an LLM decoder for generative outputs
-
-### 🔹 Prompt Engineering
-- Designed to produce descriptive, multi-sentence answers  
-- Formatting ensures structured and readable responses
-
-### 🔹 Inference Optimizations
-- Image resizing and normalization  
-- Controlled token generation (48–60 tokens) to balance latency and richness
-
-### 🔹 Why These Models?
-- **ViLT →** Efficient, lightweight transformer ideal for fact-based VQA  
-- **SmolVLM →** Produces rich, detailed multi-sentence explanations
