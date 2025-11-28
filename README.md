@@ -156,5 +156,20 @@ ViLT = concise factual responses.
   **decoder-based models = generative quality**  
   
 
+## 🏆 Project Significance
+
+This project demonstrates:
+
+- Building **end-to-end multimodal AI systems** that combine image understanding with language generation  
+- Using **Hugging Face Transformers** to implement real-world VQA pipelines  
+- Integrating **vision encoders + language decoders** for grounded visual reasoning  
+- Handling **CPU-only inference constraints** and optimizing preprocessing  
+- Applying **prompt engineering techniques** for multimodal generation  
+- Benchmarking models for accuracy, output richness, and CPU latency  
+- Understanding the trade-offs between:
+  - lightweight discriminative VLMs (ViLT)
+  - generative decoder-based VLMs (SmolVLM)
+
+The benchmark results clearly show how **architectural choices impact real-world multimodal performance**.
 
 
