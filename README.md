@@ -83,42 +83,77 @@ python smolvlm_app.py
 ```
 #### A Gradio interface will open in your browser automatically.
 
-## 📊 Multimodal Model Comparison Summary
+## 📊 Model Benchmark & Technical Evaluation
 
-### 1. **Model Architecture**
-
-| Model    | Parameters | Architecture                          | Fusion Strategy               |
-|----------|------------|----------------------------------------|-------------------------------|
-| **ViLT** | ~200M      | Vision Transformer + Text Embeddings   | Early fusion (non-generative) |
-| **SmolVLM** | ~500M   | Vision Encoder + Language Decoder      | Cross-modal generative fusion |
+This project evaluates **ViLT** and **SmolVLM** to measure performance, latency, and multimodal reasoning ability in CPU-only environments.  
+The goal is to understand computational trade-offs and output quality for image-grounded question answering and description generation.
 
 ---
 
-### 2. **Capabilities**
+### 🔍 1. Model Architecture Overview
+| Model | Parameter Count | Architecture Type                     | Fusion Strategy                  |
+|-------|----------------:|----------------------------------------|----------------------------------|
+| ViLT  | ~200M           | Vision Transformer + Text Encoder      | Early fusion (non-generative)    |
+| SmolVLM | ~500M         | Vision Encoder + Language Decoder      | Cross-modal generative fusion    |
 
-| Model    | Output                          | Strengths                    | Limitations                         |
-|----------|----------------------------------|------------------------------|--------------------------------------|
-| **ViLT** | Single-word / short phrase       | Lightweight, CPU-friendly    | Cannot produce descriptive sentences |
-| **SmolVLM** | Multi-sentence generative      | Rich, coherent descriptions  | Extremely slow on CPU                |
-
----
-
-### 3. **Performance (CPU Inference) 
-
-| Model    | Avg. CPU Time  | RAM Usage     | Notes                                     |
-|----------|----------------|---------------|-------------------------------------------|
-| **ViLT** | 10–12 seconds  | ~2–3 GB       | Fast enough for real-time VQA             |
-| **SmolVLM** | 5–6 minutes | ~4–6 GB       | Generative decoding is slow on CPU        |
+**Interpretation:**  
+ViLT focuses on efficiency, while SmolVLM uses a powerful decoder to generate rich multimodal text at a high computational cost.
 
 ---
 
-### 4. **Use-Case Fit**
+### 🧠 2. Capability Comparison
+| Model   | Output Nature                     | Ideal Use-Cases                         | Limitations                       |
+|---------|------------------------------------|------------------------------------------|-----------------------------------|
+| ViLT    | Short factual answers (classification) | Fast Q&A, low-latency tasks           | Cannot generate descriptive text  |
+| SmolVLM | Multi-sentence generative descriptions | Captioning, scene understanding       | Very slow on CPU                  |
 
-| Scenario               | Best Model | Reason                           |
-|------------------------|-----------|-----------------------------------|
-| Quick factual VQA      | ViLT      | Fast, lightweight                 |
-| Scene description       | SmolVLM   | Strong generative ability         |
-| Low compute environments| ViLT      | Minimal latency                   |
-| Rich multimodal understanding | SmolVLM | Decoder-based generative power |
+**Interpretation:**  
+ViLT = speed.  
+SmolVLM = expressiveness.
+
+---
+
+### 🖥️ 3. CPU Performance Benchmark
+(All results measured on a CPU-only setup.)
+
+| Model   | Average Inference Time | Memory Footprint | Notes                                             |
+|---------|-------------------------|------------------|---------------------------------------------------|
+| ViLT    | 10–12 seconds           | ~2–3 GB RAM      | Practical for real-time VQA                       |
+| SmolVLM | 5–6 minutes             | ~4–6 GB RAM      | Decoder-based generation causes extreme latency   |
+
+**Interpretation:**  
+SmolVLM’s generative loop is computationally heavy; ViLT remains usable even on low-end CPUs.
+
+---
+
+### 📝 4. Output Quality Evaluation
+| Model   | Description Richness | Context Awareness | Linguistic Coherence |
+|---------|----------------------|-------------------|----------------------|
+| ViLT    | Low                  | Medium            | Medium               |
+| SmolVLM | High                 | High              | High                 |
+
+**Interpretation:**  
+SmolVLM = human-like paragraphs.  
+ViLT = concise factual responses.
+
+---
+
+### 🎯 5. Use-Case Recommendation Matrix
+| Use-Case Scenario               | Recommended Model | Reason                               |
+|----------------------------------|-------------------|---------------------------------------|
+| Fast question answering          | ViLT              | Low latency                           |
+| Detailed scene analysis          | SmolVLM           | Rich generative ability               |
+| Low-compute environments         | ViLT              | CPU-efficient                         |
+| Free-form multimodal generation  | SmolVLM           | Decoder-based generative power        |
+
+---
+
+### 🧩 6. Summary of Insights
+- **ViLT** → Efficient, low-latency, CPU-friendly.  
+- **SmolVLM** → Rich multimodal text generation, but extremely slow on CPU.  
+- Clear trade-off:  
+  **classification-based models = speed**  
+  **decoder-based models = generative quality**  
+
 
 
