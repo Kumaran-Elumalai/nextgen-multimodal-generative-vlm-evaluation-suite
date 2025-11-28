@@ -76,8 +76,9 @@ cd vilt_vqa
 python vilt_app.py
 ```
 
-## Run SmolVLM App
+- Run SmolVLM App
 ```
 cd smolvlm_vqa
 python smolvlm_app.py
 ```
+#### A Gradio interface will open in your browser automatically.
