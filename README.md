@@ -83,3 +83,42 @@ python smolvlm_app.py
 ```
 #### A Gradio interface will open in your browser automatically.
 
+## 📊 Multimodal Model Comparison Summary
+
+### 1. **Model Architecture**
+
+| Model    | Parameters | Architecture                          | Fusion Strategy               |
+|----------|------------|----------------------------------------|-------------------------------|
+| **ViLT** | ~200M      | Vision Transformer + Text Embeddings   | Early fusion (non-generative) |
+| **SmolVLM** | ~500M   | Vision Encoder + Language Decoder      | Cross-modal generative fusion |
+
+---
+
+### 2. **Capabilities**
+
+| Model    | Output                          | Strengths                    | Limitations                         |
+|----------|----------------------------------|------------------------------|--------------------------------------|
+| **ViLT** | Single-word / short phrase       | Lightweight, CPU-friendly    | Cannot produce descriptive sentences |
+| **SmolVLM** | Multi-sentence generative      | Rich, coherent descriptions  | Extremely slow on CPU                |
+
+---
+
+### 3. **Performance (CPU Inference) — Updated**
+
+| Model    | Avg. CPU Time  | RAM Usage     | Notes                                     |
+|----------|----------------|---------------|-------------------------------------------|
+| **ViLT** | 10–12 seconds  | ~2–3 GB       | Fast enough for real-time VQA             |
+| **SmolVLM** | 5–6 minutes | ~4–6 GB       | Generative decoding is slow on CPU        |
+
+---
+
+### 4. **Use-Case Fit**
+
+| Scenario               | Best Model | Reason                           |
+|------------------------|-----------|-----------------------------------|
+| Quick factual VQA      | ViLT      | Fast, lightweight                 |
+| Scene description       | SmolVLM   | Strong generative ability         |
+| Low compute environments| ViLT      | Minimal latency                   |
+| Rich multimodal understanding | SmolVLM | Decoder-based generative power |
+
+
