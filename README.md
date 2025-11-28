@@ -29,12 +29,15 @@ This project aims to provide:
 
 ## 📁 Repository Structure
 
+```
 nextgen-multimodal-generative-vlm-evaluation-suite/
 │── vilt_vqa/
-│ └── vilt_app.py
+│   └── vilt_app.py
 │── smolvlm_vqa/
-│ └── smolvlm_app.py
+│   └── smolvlm_app.py
 │── assets/
-│ └── sample_images/
+│   └── sample_images/
 │── README.md
 │── requirements.txt
+```
+
