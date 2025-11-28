@@ -103,7 +103,7 @@ python smolvlm_app.py
 
 ---
 
-### 3. **Performance (CPU Inference) — Updated**
+### 3. **Performance (CPU Inference) 
 
 | Model    | Avg. CPU Time  | RAM Usage     | Notes                                     |
 |----------|----------------|---------------|-------------------------------------------|
