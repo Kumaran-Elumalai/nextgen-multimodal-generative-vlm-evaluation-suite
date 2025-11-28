@@ -18,3 +18,11 @@ This repository demonstrates practical multimodal AI development by implementing
 ### 🔹 SmolVLM – Small Vision-Language Model
 - Generates multi-sentence, descriptive responses  
 - Great for **detailed image understanding and explanation**
+
+## 🎯 Project Goals
+
+This project aims to provide:
+
+- ✔️ **End-to-end multimodal pipelines** for image + text reasoning  
+- ✔️ **Efficient CPU-based inference** without requiring GPUs  
+- ✔️ **Clean, professional, interactive AI demos** showcasing real-world VQA and multimodal capabilities  
