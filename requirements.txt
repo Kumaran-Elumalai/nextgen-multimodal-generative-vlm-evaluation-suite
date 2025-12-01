@@ -1,0 +1,19 @@
+# Python version constraint
+python_version <= "3.11"
+
+# Core ML & Transformers
+transformers==4.44.2
+torch==2.2.2
+sentencepiece==0.2.0
+accelerate==0.31.0
+
+# Vision + Image Processing
+Pillow==10.4.0
+
+# Gradio for UI
+gradio==4.37.2
+
+# Utilities
+numpy==1.26.4
+requests==2.32.3
+tqdm==4.66.4
