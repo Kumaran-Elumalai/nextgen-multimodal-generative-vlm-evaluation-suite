@@ -135,7 +135,6 @@ SmolVLM’s generative loop is computationally heavy; ViLT remains usable even o
 **Interpretation:**  
 SmolVLM = human-like paragraphs.  
 ViLT = concise factual responses.
-
 ---
 
 ### 🎯 5. Use-Case Recommendation Matrix
