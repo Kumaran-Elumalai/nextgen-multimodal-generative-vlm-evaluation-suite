@@ -7,7 +7,6 @@ This project focuses on **Vision–Language Models (VLMs)** designed to combine 
 - **Visual Question Answering (VQA)**
 - **Descriptive image generation and captioning**
 
-
 ## 🚀 Overview
 
 This repository demonstrates practical multimodal AI development by implementing two advanced VLMs:
