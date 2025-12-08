@@ -9,7 +9,7 @@ This project focuses on **Vision–Language Models (VLMs)** designed to combine 
 ## 🚀 Overview
 
 This repository demonstrates practical multimodal AI development by implementing two advanced VLMs:
-
+ 
 ### 🔹 ViLT – Vision-and-Language Transformer
 - Lightweight and optimized for CPU-friendly deployment  
 - Fast inference  
