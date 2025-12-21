@@ -14,7 +14,7 @@ This repository demonstrates practical multimodal AI development by implementing
 - Lightweight and optimized for CPU-friendly deployment  
 - Fast inference  
 - Ideal for **single-word or short-answer VQA**
-
+ 
 ### 🔹 SmolVLM – Small Vision-Language Model
 - Generates multi-sentence, descriptive responses  
 - Great for **detailed image understanding and explanation**
